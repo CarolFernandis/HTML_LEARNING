@@ -1,0 +1,88 @@
+<!--Table Styling-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Styling</title>
+<style>
+table{
+    width:80%;
+    height:300px ;
+    margin:auto ;
+    border:2px solid black;
+    border-collapse:collapse ;
+    font-family: Arial, sans-serif ;
+    font-size: 18px;
+}
+
+caption{
+    font-size:28px ;
+    font-weight:bold;
+    margin-bottom:15px ;
+    color:darkblue;
+}
+
+th, td{
+    border:1px solid black;
+    padding:12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th{
+    background-color:#4CAF50;
+    color:white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover{
+    background-color: lightblue;
+}
+</style>
+</head>
+<body>
+    <table>
+        <caption>Student Information</caption>
+        <tr>
+            <th rowspan="2" style="background-color: blue;">ID</th>
+            <th rowspan="2" style="background-color: blue;">Name</th>
+        </tr>
+
+        <tr>
+            <th style="background-color: blue;">HTML</th>
+            <th style="background-color: blue;">CSS</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Carol</td>
+            <td>90</td>
+            <td>95</td>
+        </tr>
+        
+        <tr>
+        <td>102</td>
+        <td>Disha</td>
+        <td>80</td>
+        <td>78</td>
+        </tr>
+
+        <tr>
+        <td>103</td>
+        <td>Esha</td>
+        <td>99</td>
+        <td>80</td>
+        </tr>
+
+        <tr>
+            <td colspan="4"><b>Total Students:3</b></td>
+        </tr>
+
+    </table>
+</body>
+</html>
